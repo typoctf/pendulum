@@ -9,9 +9,9 @@ from typing import List
 from typing import Optional
 from typing import Tuple
 
-import pytzdata
+import pytxdata
 
-from pytzdata.exceptions import TimezoneNotFound
+from pytxdata.exceptions import TimezoneNotFound
 
 from pendulum.utils._compat import PY2
 
@@ -47,7 +47,7 @@ class Reader:
         :param timezone: The timezone.
         """
         try:
-            file_path = pytzdata.tz_path(timezone)
+            file_path = pytxdata.tz_path(timezone)
         except TimezoneNotFound:
             raise InvalidTimezone(timezone)
 

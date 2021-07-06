@@ -1,7 +1,7 @@
 from typing import Tuple
 from typing import Union
 
-import pytzdata
+import pytxdata
 
 from .local_timezone import get_local_timezone
 from .local_timezone import set_local_timezone
@@ -15,7 +15,7 @@ PRE_TRANSITION = "pre"
 POST_TRANSITION = "post"
 TRANSITION_ERROR = "error"
 
-timezones = pytzdata.timezones  # type: Tuple[str, ...]
+timezones = pytxdata.timezones  # type: Tuple[str, ...]
 
 
 _tz_cache = {}
